@@ -21,22 +21,14 @@ public class MyTestNGListener implements ITestListener
 	@Override
     public void onTestFailure(ITestResult result) {
         ChainTestListener.log("Log: FAIL - Test Failed");
-        ChainTestListener.log("Log: FAIL - Test Failed");
-        ChainTestListener.log("Log: FAIL - Test Failed");
         ChainTestListener.log("Error: " + result.getThrowable().getMessage());
 
         try {
-        	 ChainTestListener.log("Log: FAIL - Test Failed");
-             ChainTestListener.log("Log: FAIL - Test Failed");
-             ChainTestListener.log("Log: FAIL - Test Failed");
             if (ConfigUtility.readProperty("ScreenshotOnFail").equalsIgnoreCase("true")) {
                 String screenshotPath = Utility.captureScreeshot(BrowserFactory.getDriver());
                 ChainTestListener.embed(screenshotPath, "image/png");
             }
         } catch (IOException e) {
-        	 ChainTestListener.log("Log: FAIL - Test Failed");
-             ChainTestListener.log("Log: FAIL - Test Failed");
-             ChainTestListener.log("Log: FAIL - Test Failed");
             e.printStackTrace();
         }
     }
