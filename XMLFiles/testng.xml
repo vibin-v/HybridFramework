@@ -10,6 +10,7 @@
 	  <test thread-count="5" name="Test">
 	    <classes>
 	      <class name="testCases.LoginApplication"/>
+	      <class name="testCases.SignUP_Cases"/>
 	    </classes>
 	  </test> <!-- Test -->
 </suite> <!-- Suite -->

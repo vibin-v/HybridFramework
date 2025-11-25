@@ -16,6 +16,7 @@ public class SignUpPage {
 		this.driver = driver;
 	}
 	
+	By signupLinkfromLoginpage = By.xpath("//a[text()='New user? Signup']");
 	By signup_Name = By.id("name");
 	By signup_Email = By.id("email");
 	By signup_Password = By.id("password");
@@ -23,10 +24,12 @@ public class SignUpPage {
 	By signup_Gender = By.id("gender2");
 	By signup_state = By.xpath("//select[@id='state']/option[2]");
 	By signup_Hobbies = By.xpath("//select[@id='hobbies']/option[2]");
-	By signup_Submit = By.xpath("//button[text()='Sign up']");
+	By signup_Submit = By.xpath("//button[text()='Sign up']1");
 	
-	public void isSignUpButtonEnabled(String sup_Name,String sup_Email,String sup_passwd,String sup_Int,String sup_Gender,String sup_State,String sup_Hobbies) throws InterruptedException, IOException
+	public void enterSignupUserDetails() throws InterruptedException, IOException
 	{
+		driver.findElement(signupLinkfromLoginpage).click();
+		Thread.sleep(5000);
 		driver.findElement(signup_Name).sendKeys("Vibin");
 		Utility.checkElement(driver, signup_Email).sendKeys("abcd@gmail.com");
 		Utility.checkElement(driver, signup_Password).sendKeys("KL01@trivandrum");
@@ -34,5 +37,12 @@ public class SignUpPage {
 		Utility.checkElement(driver, signup_Gender).click();
 		Utility.checkElement(driver, signup_state).click();
 		Utility.checkElement(driver, signup_Hobbies).click();
+		Thread.sleep(5000);
+	}
+	
+	public boolean signUpButtonStatus()
+	{
+		boolean signupBtnStatus = driver.findElement(signup_Submit).isEnabled();
+		return signupBtnStatus;
 	}
 }

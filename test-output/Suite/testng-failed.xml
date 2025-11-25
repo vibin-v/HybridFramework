@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.LoginApplication">
+      <class name="testCases.SignUP_Cases">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="isSignUpLinkDisplayed"/>
+          <include name="signupPageVerification"/>
         </methods>
-      </class> <!-- testCases.LoginApplication -->
+      </class> <!-- testCases.SignUP_Cases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
