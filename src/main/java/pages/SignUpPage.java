@@ -24,7 +24,7 @@ public class SignUpPage {
 	By signup_Gender = By.id("gender2");
 	By signup_state = By.xpath("//select[@id='state']/option[2]");
 	By signup_Hobbies = By.xpath("//select[@id='hobbies']/option[2]");
-	By signup_Submit = By.xpath("//button[text()='Sign up']1");
+	By signup_Submit = By.xpath("//button[text()='Sign up']");
 	
 	public void enterSignupUserDetails() throws InterruptedException, IOException
 	{
