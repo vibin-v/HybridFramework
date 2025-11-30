@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-26T21:53:01 IST" name="Suite" finished-at="2025-11-26T21:53:32 IST" duration-ms="31242">
+  <suite started-at="2025-11-30T09:35:21 IST" name="Suite" finished-at="2025-11-30T09:35:55 IST" duration-ms="33895">
     <groups>
     </groups>
-    <test started-at="2025-11-26T21:53:01 IST" name="Test" finished-at="2025-11-26T21:53:32 IST" duration-ms="31242">
+    <test started-at="2025-11-30T09:35:21 IST" name="Test" finished-at="2025-11-30T09:35:55 IST" duration-ms="33895">
       <class name="testCases.SignUP_Cases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.SignUP_Cases@2a7ed1f]" started-at="2025-11-26T21:53:01 IST" name="setUp" finished-at="2025-11-26T21:53:03 IST" duration-ms="2025" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.SignUP_Cases@2a7ed1f]" started-at="2025-11-30T09:35:21 IST" name="setUp" finished-at="2025-11-30T09:35:26 IST" duration-ms="4830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signupPageVerification()[pri:0, instance:testCases.SignUP_Cases@2a7ed1f]" started-at="2025-11-26T21:53:03 IST" name="signupPageVerification" finished-at="2025-11-26T21:53:32 IST" duration-ms="28991" status="PASS">
+        <test-method signature="signupPageVerification()[pri:0, instance:testCases.SignUP_Cases@2a7ed1f]" started-at="2025-11-30T09:35:26 IST" name="signupPageVerification" finished-at="2025-11-30T09:35:55 IST" duration-ms="29013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupPageVerification -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SignUP_Cases@2a7ed1f]" started-at="2025-11-26T21:53:32 IST" name="tearDown" finished-at="2025-11-26T21:53:32 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SignUP_Cases@2a7ed1f]" started-at="2025-11-30T09:35:55 IST" name="tearDown" finished-at="2025-11-30T09:35:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

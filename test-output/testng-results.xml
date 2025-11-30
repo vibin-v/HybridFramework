@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Log:INFO - User Login Success.]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-11-25T20:11:08 IST" name="Suite" finished-at="2025-11-25T20:11:57 IST" duration-ms="49052">
+  <suite started-at="2025-11-27T19:50:56 IST" name="Suite" finished-at="2025-11-27T19:51:10 IST" duration-ms="13357">
     <groups>
     </groups>
-    <test started-at="2025-11-25T20:11:08 IST" name="Test" finished-at="2025-11-25T20:11:57 IST" duration-ms="49052">
+    <test started-at="2025-11-27T19:50:56 IST" name="Test" finished-at="2025-11-27T19:51:10 IST" duration-ms="13357">
       <class name="testCases.LoginApplication">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginApplication@6a47b187]" started-at="2025-11-25T20:11:08 IST" name="setUp" finished-at="2025-11-25T20:11:10 IST" duration-ms="1516" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginApplication@4fbe37eb]" started-at="2025-11-27T19:50:56 IST" name="setUp" finished-at="2025-11-27T19:50:59 IST" duration-ms="2236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:testCases.LoginApplication@6a47b187]" started-at="2025-11-25T20:11:10 IST" name="loginWithValidCredential" data-provider="loginCredential" finished-at="2025-11-25T20:11:18 IST" duration-ms="7313" status="PASS">
+        <test-method signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:testCases.LoginApplication@4fbe37eb]" started-at="2025-11-27T19:50:59 IST" name="loginWithValidCredential" data-provider="loginCredential" finished-at="2025-11-27T19:51:07 IST" duration-ms="7321" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -27,59 +24,28 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Log:INFO - User Login Success.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredential -->
-        <test-method signature="logOutFromApp()[pri:2, instance:testCases.LoginApplication@6a47b187]" started-at="2025-11-25T20:11:18 IST" name="logOutFromApp" finished-at="2025-11-25T20:11:24 IST" depends-on-methods="testCases.LoginApplication.loginWithValidCredential" duration-ms="6166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApp -->
-        <test-method signature="isSocialLinksDisplayed()[pri:3, instance:testCases.LoginApplication@6a47b187]" started-at="2025-11-25T20:11:24 IST" name="isSocialLinksDisplayed" finished-at="2025-11-25T20:11:24 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isSocialLinksDisplayed -->
-        <test-method signature="isSignUpLinkDisplayed()[pri:4, instance:testCases.LoginApplication@6a47b187]" started-at="2025-11-25T20:11:24 IST" name="isSignUpLinkDisplayed" finished-at="2025-11-25T20:11:27 IST" duration-ms="3072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isSignUpLinkDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginApplication@6a47b187]" started-at="2025-11-25T20:11:27 IST" name="tearDown" finished-at="2025-11-25T20:11:27 IST" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.LoginApplication -->
-      <class name="testCases.SignUP_Cases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.SignUP_Cases@125290e5]" started-at="2025-11-25T20:11:27 IST" name="setUp" finished-at="2025-11-25T20:11:28 IST" duration-ms="1117" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signupPageVerification()[pri:0, instance:testCases.SignUP_Cases@125290e5]" started-at="2025-11-25T20:11:28 IST" name="signupPageVerification" finished-at="2025-11-25T20:11:57 IST" duration-ms="28852" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //button[text()='Sign up']1 because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[text()='Sign up']1' is not a valid XPath expression.
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='welcomeMessage']"}
   (Session info: chrome=142.0.7444.176)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7002aad56f428eaa2b9af71f05e14d79, findElement {using=xpath, value=//button[text()='Sign up']1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\VIBINV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52918}, goog:processID: 12352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52918/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7002aad56f428eaa2b9af71f05e14d79]]>
+Command: [aa2836192f52a9f504205e6bfd2c96e8, findElement {value=//h4[@class='welcomeMessage'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\VIBINV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54372}, goog:processID: 7728, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54372/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa2836192f52a9f504205e6bfd2c96e8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //button[text()='Sign up']1 because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[text()='Sign up']1' is not a valid XPath expression.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='welcomeMessage']"}
   (Session info: chrome=142.0.7444.176)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7002aad56f428eaa2b9af71f05e14d79, findElement {using=xpath, value=//button[text()='Sign up']1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\VIBINV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52918}, goog:processID: 12352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52918/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7002aad56f428eaa2b9af71f05e14d79
+Command: [aa2836192f52a9f504205e6bfd2c96e8, findElement {value=//h4[@class='welcomeMessage'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\VIBINV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54372}, goog:processID: 7728, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54372/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa2836192f52a9f504205e6bfd2c96e8
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -94,8 +60,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at pages.SignUpPage.signUpButtonStatus(SignUpPage.java:45)
-at testCases.SignUP_Cases.signupPageVerification(SignUP_Cases.java:21)
+at pages.DashboardPage.welcomeText(DashboardPage.java:31)
+at testCases.LoginApplication.loginWithValidCredential(LoginApplication.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -124,15 +90,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signupPageVerification -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SignUP_Cases@125290e5]" started-at="2025-11-25T20:11:57 IST" name="tearDown" finished-at="2025-11-25T20:11:57 IST" duration-ms="140" status="PASS">
+        </test-method> <!-- loginWithValidCredential -->
+        <test-method signature="logOutFromApp()[pri:2, instance:testCases.LoginApplication@4fbe37eb]" started-at="2025-11-27T19:51:07 IST" name="logOutFromApp" finished-at="2025-11-27T19:51:07 IST" depends-on-methods="testCases.LoginApplication.loginWithValidCredential" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.LoginApplication.logOutFromApp() on instance testCases.LoginApplication@4fbe37eb depends on not successfully finished methods 
+[testCases.LoginApplication.loginWithValidCredential() on instance testCases.LoginApplication@4fbe37eb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.LoginApplication.logOutFromApp() on instance testCases.LoginApplication@4fbe37eb depends on not successfully finished methods 
+[testCases.LoginApplication.loginWithValidCredential() on instance testCases.LoginApplication@4fbe37eb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApp -->
+        <test-method signature="isSocialLinksDisplayed()[pri:3, instance:testCases.LoginApplication@4fbe37eb]" started-at="2025-11-27T19:51:07 IST" name="isSocialLinksDisplayed" finished-at="2025-11-27T19:51:07 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSocialLinksDisplayed -->
+        <test-method signature="isSignUpLinkDisplayed()[pri:4, instance:testCases.LoginApplication@4fbe37eb]" started-at="2025-11-27T19:51:07 IST" name="isSignUpLinkDisplayed" finished-at="2025-11-27T19:51:10 IST" duration-ms="3071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSignUpLinkDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginApplication@4fbe37eb]" started-at="2025-11-27T19:51:10 IST" name="tearDown" finished-at="2025-11-27T19:51:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.SignUP_Cases -->
+      </class> <!-- testCases.LoginApplication -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,0 +1,3 @@
+jenkins cmd - mvn test -P smoke
+
+app wikr ovla punz jjov

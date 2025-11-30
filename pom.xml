@@ -58,6 +58,25 @@
 				</plugins>
 			</build>
 		</profile>
+		<profile>
+			<id>alltests</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.3</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>XMLFiles/Smoke_Testng.xml</suiteXmlFile>
+								<suiteXmlFile>XMLFiles/Regression_Testng.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 	</profiles>
 
 	<dependencies>
